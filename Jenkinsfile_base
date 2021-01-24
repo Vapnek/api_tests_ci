@@ -6,7 +6,7 @@ triggers{
     stages {
         stage('build') {
             steps {
-                sh "docker build -t api_test_base . -f Dockerfile_base"
+                sh "sudo docker build -t api_test_base . -f Dockerfile_base"
             }
         }
     }
